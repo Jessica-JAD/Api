@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RESTApi</name>
+    </assembly>
+    <members>
+        <member name="M:RESTApi.Controllers.AlmacenesController.GetAll(Entities.AlmacenFiltering)">
+            <summary>
+            Obtener listado de almacenes
+            </summary>
+            <remarks>
+            Se permite aplicar filtrados; los filtros aplicados a CODIGO y DESCRIPCION buscan cualquier resultado que contenga la cadena.
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Controllers.AlmacenesController.GetAllWithDetails(Entities.AlmacenFiltering)">
+            <summary>
+            Obtener listado de almacenes con sus secciones
+            </summary>
+            <remarks>
+            Se permite aplicar filtros; los filtros aplicados a CODIGO y DESCRIPCION buscan cualquier resultado que contenga la cadena.
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Controllers.ArticulosController.GetAll(Entities.ArticulosFiltering)">
+            <summary>
+            Obtener listado de artículos
+            </summary>
+            <remarks>
+            Se permite aplicar filtrados; los filtros aplicados a CODIGO y DESCRIPCION buscan cualquier resultado que contenga la cadena.
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Controllers.ArticulosController.GetDetalles(Entities.ArticulosFiltering)">
+            <summary>
+            Obtener detalles de artículos
+            </summary>
+            <remarks>
+            Se permite aplicar filtrados; a partir de un Almacen y una Seccion.
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Controllers.LoginController.GetTokenByPassword(Entities.DTOs.LoginDTO)">
+            <summary>
+            Autenticación
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RESTApi.Controllers.SeccionesController.GetAll(Entities.SeccionFiltering)">
+            <summary>
+            Obtener listado de secciones
+            </summary>
+            <remarks>
+            Se permite aplicar filtrados; los filtros aplicados a CODIGO y DESCRIPCION buscan cualquier resultado que contenga la cadena.
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Controllers.SolicitudesController.GetAll(Entities.SolicitudFilteringPaging)">
+            <summary>
+            Obtener listado de solicitudes
+            </summary>
+            <remarks>
+            Se permite aplicar filtros; los filtros aplicados a CONSECUTIVO y OBSERVACIONES buscan cualquier resultado que contenga la cadena.
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Controllers.SolicitudesController.GetById(System.Int32)">
+            <summary>
+            Obtener datos de una solicitud
+            </summary>
+            <remarks>
+            Debe especificarse el Id de la solicitud.
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Controllers.SolicitudesController.GetByIdWithLines(System.Int32)">
+            <summary>
+            Obtener datos de una solicitud con sus lineas
+            </summary>
+            <remarks>
+            Debe especificarse el Id de la solicitud.
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Controllers.SolicitudesController.CreateSolicitud(Entities.DTOs.SolicitudNueva)">
+            <summary>
+            Crear una nueva solicitud con sus lineas
+            </summary>
+            <remarks>
+            Debe recibir coo parámetro un objeto con los datos de la solicitud y sus lineas
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Controllers.UnidadesMedidaController.GetAll(Entities.UnidadMedidaFiltering)">
+            <summary>
+            Obtener listado de unidades de medida
+            </summary>
+            <remarks>
+            Se permite aplicar filtrados; los filtros aplicados a CODIGO y DESCRIPCION buscan cualquier resultado que contenga la cadena.
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Controllers.UnidadesMedidaController.GetAllWithDetails(Entities.UnidadMedidaFiltering)">
+            <summary>
+            Obtener listado de unidades de medida con sus conversiones
+            </summary>
+            <remarks>
+            Se permite aplicar filtrados; los filtros aplicados a CODIGO y DESCRIPCION buscan cualquier resultado que contenga la cadena.
+            </remarks>
+        </member>
+        <member name="M:RESTApi.Utiles.General.GetConnectionData(System.String,System.String,System.String,System.String)">
+            <summary>
+            Metodo q devuelve los datos necesarios para la eventual conexion, buscando en los juegos de datos establecidos en el cliente
+            </summary>
+        </member>
+    </members>
+</doc>
